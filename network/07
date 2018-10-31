@@ -1,0 +1,4 @@
+# nslookup - query Internet name servers interactively
+# nslookup [address] [DNS server address]
+
+nslookup slash16.org 8.8.8.8

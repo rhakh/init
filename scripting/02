@@ -1,0 +1,6 @@
+#!/bin/bash
+LOGS=/var/log/update_script.log
+apt-get update >> $LOGS
+apt-get upgrade >> $LOGS
+# cron
+# echo '0 4 * * 1 ~/scripts/02' | crontab

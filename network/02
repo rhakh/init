@@ -1,0 +1,2 @@
+# ifconfig -- configure network interface parameters
+ifconfig en0

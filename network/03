@@ -1,0 +1,3 @@
+# ifconfig -- configure network interface parameters
+
+ifconfig en0 | grep -e "ether\b" | awk '/ether/{print $2}'

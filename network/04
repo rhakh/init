@@ -1,0 +1,9 @@
+# netstat -- show network status
+#  -n    Show network addresses as numbers (normally netstat interprets addresses and attempts
+#           to display them symbolically).  This option may be used with any of the display for-
+#           mats.
+# -r    Show the routing tables.  Use with -a to show protocol-cloned routes.  When -s is also
+#           present, show routing statistics instead.  When -l is also present, netstat assumes
+#           more columns are there and the maximum transmission unit (``mtu'') are also displayed.
+
+netstat -nr | awk '/default/ {print $2; exit}'
